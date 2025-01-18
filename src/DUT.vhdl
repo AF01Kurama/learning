@@ -4,12 +4,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity DUT is
+entity tt_um_example is
     port(input_vector: in std_logic_vector(1 downto 0);
        	output_vector: out std_logic_vector(0 downto 0));
 end entity;
 
-architecture DutWrap of DUT is
+architecture DutWrap of tt_um_example is
    component OR_NOR is
      port(A, B : in std_logic;
          y : out std_logic);
